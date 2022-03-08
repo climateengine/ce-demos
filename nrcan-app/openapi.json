@@ -1,0 +1,44 @@
+{
+  "openapi": "3.0.2",
+  "info": {
+    "title": "FastAPI: Local",
+    "version": "local"
+  },
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Welcome",
+        "description": "Sanity check",
+        "operationId": "welcome__get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/app": {
+      "get": {
+        "summary": "App",
+        "operationId": "app_app_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
